@@ -1,11 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco Falabella</title>
+  <!-- Enlace con CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- encabezado negro lado izq -->
+    <div class="access">
+        <ul class="izq">
+          <li><a href="#">Seguros</a></li>
+          <li><a href="#">Viajes</a></li>
+          <li><a href="#">Falabella</a></li>
+          <li><a href="#">Sodimac</a></li>
+          <li><a href="#">Tottus</a></li>
+          <li><a href="#">Homy</a></li>
+          <li><a href="#">Linio</a></li>
+          <li><a href="#">fpay</a></li>
+          <li><a href="#">Fazil</a></li>
+        </ul>
+<!-- encabezado negro lado derecho -->
+        <ul class="derecha">
+            <li>Ayuda y Contacto</li>
+            <li>Oficinas y Cajeros</li>
+        </ul>
+      </div>
+    <!-- Header logos y accesos a MI CUENTA -->
+      <header class="top-bar">
+        <div class="container">
+          <div class="logo">
+            <img src="img/Logotipo_Banco_Falabella.svg.png" alt="Banco Falabella">
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Cuentas</a></li>
+              <li><a href="#">Tarjetas CMR</a></li>
+              <li><a href="#">Avance</a></li>
+              <li><a href="#">Créditos</a></li>
+              <li><a href="#">Inversiones</a></li>
+              <li><a href="#">Seguros</a></li>
+              <li><a href="#">Descuentos</a></li>
+              <li><a href="#">CMR Puntos</a></li>
+              <li><a href="#">Portalidad</a></li>
+            </ul>
+          </nav>
+          <div class="cta-buttons">
+            <button class="mi-cuenta">Mi Cuenta</button>
+          </div>
+        </div>
+      </header>
+    <!-- Seccion Unete al banco y 1 imagen, que seria el hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Únete al Banco de los Gennials</h1>
+        <p>¡Pide tu CMR 100% Digital y en menos de 5 minutos!</p>
+        <a href="#" class="btn-green">ABRÉLA AQUÍ</a>
+      </div>
+      <div class="hero-image">
+        <img src="img/tarjeta_de_debito_que_es_solicitar_online_digital__1_.png" alt="Tarjetas CMR">
+      </div>
+    </div>
+  </section>
+<!-- Seccion de simulador de credito -->
+  <section class="simulador">
+    <div class="container">
+      <h2>Simula tu Crédito de Consumo</h2>
+      <form>
+        <input type="text" placeholder="Ingresa tu RUT">
+        <button class="btn-green">SIMULAR</button>
+      </form>
+    </div>
+  </section>
+<!-- Seccion con contenedores simulando carrusel de fotos (sin js, lo cual no funciona),  -->
+  <section class="destacados">
+    <div class="container">
+      <div class="card">
+        <img src="img/tarjeta_de_debito_que_es_solicitar_online_digital__1_.png" alt="Cuenta Corriente">
+        <h3>Abre tu Cuenta Corriente 100% online</h3>
+        <p>Hazlo desde tu celular y disfruta de todos los beneficios.</p>
+      </div>
+      <div class="card">
+        <img src="img/deposito_a_plazo_fijo_que_es_y_como_funciona_53912_orig.jpg" alt="Depósito a Plazo">
+        <h3>¡Tenemos tasas increíbles en depósito a plazo!</h3>
+        <p>Compara, simula y contrata desde la app.</p>
+      </div>
+      <div class="card">
+        <img src="img/avance.jpg" alt="Avance">
+        <h3>¡Pide hoy tu Avance!</h3>
+        <p>Simúla y pide 100% online.</p>
+      </div>
+    </div>
+  </section>
+<!-- Seccion black friday -->
+  <section class="black-friday">
+    <div class="container">
+      <h2>¡Ya comenzó el Black Friday en Banco Falabella!</h2>
+      <p>¡Descubre descuentos y promociones increíbles!</p>
+      <a href="#" class="btn-green">IR AL BLACK FRIDAY</a>
+    </div>
+  </section>
+<!-- Seccion donde se podra encontrar distintos tipos de ofertas relacionadas con el banco -->
+  <section class="ofertas">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <img src="img/12cuotas.jpg" alt="12 cuotas sin interés">
+          <h3>12 cuotas sin interés</h3>
+          <p>Comprando en Falabella.com</p>
+        </div>
+        <div class="card">
+          <img src="img/seguroauto.jpg" alt="Seguro Automotriz">
+          <h3>Seguro Automotriz Full Cobertura</h3>
+          <p>Contrátalo 100% online.</p>
+        </div>
+        <div class="card">
+          <img src="img/4cuotas.jpg" alt="4 cuotas gratis">
+          <h3>Hasta 4 cuotas gratis</h3>
+          <p>Con tu CMR</p>
+        </div>
+        <div class="card">
+          <img src="img/giftcard.jpg" alt="Gift Card">
+          <h3>Participa por una Gift Card</h3>
+          <p>Solo por pedir tu CMR</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Seccion de extras donde hay descuentos relacionados a la Tarjeta CMR al usar la APP -->
+  <section class="extras">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <img src="img/paga.jpg" alt="Paga tu crédito">
+          <h3>Paga sin Clave tu CMR</h3>
+        </div>
+        <div class="card">
+          <img src="img/alivianaPago.jpg" alt="Aliviana pago">
+          <h3>¡Aliviana el pago de tu CMR!</h3>
+        </div>
+        <div class="card">
+          <img src="img/martesDescuentos.jpg" alt="40% descuento">
+          <h3>Disfruta un 40% de dcto los martes</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Seccion de beneficios como cargar BIP  -->
+  <section class="beneficios">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <img src="img/bip.jpg" alt="Recarga Bip">
+          <h3>Inscribe tu bip! a tu CMR</h3>
+        </div>
+        <div class="card">
+          <img src="img/pagoAuto.jpg" alt="Pago automático">
+          <h3>¡Olvídate de pagar tus cuentas!</h3>
+        </div>
+        <div class="card">
+          <img src="img/pagosOnline.jpg" alt="Cuenta corriente">
+          <h3>Hazlo con tu Cuenta Corriente!</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Seccion donde se recomienda usar a EDUU para aprender a invertir -->
+  <section class="eddu">
+    <div class="container">
+      <div class="card">
+        <img src="img/eduu.jpg" alt="Eddu">
+        <h3>¡Eddu te ayuda!</h3>
+        <p>Tips para aprender a ahorrar. Aprende con Eddu en redes sociales.</p>
+      </div>
+    </div>
+  </section>
+<!-- Seccion de footer, aunque no esta descrita como section, pero la etiqueta footer lo indica -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div>
+          <h4>Nuestro Banco</h4>
+          <ul>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Directorio</a></li>
+            <li><a href="#">Administración</a></li>
+            <li><a href="#">Información Institucional</a></li>
+            <li><a href="#">Tasas y Tarifas</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+            <li><a href="#">Licitación Seguro Hipotecario</a></li>
+            <li><a href="#">FACTA</a></li>
+            <li><a href="#">Canal de Integridad</a></li>
+            <li><a href="#">Proveedores Portabilidad Financiera</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Servicio al Cliente</h4>
+          <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Ayuda y Contacto</a></li>
+            <li><a href="#">Sucursales</a></li>
+            <li><a href="#">Procesos COVID-19</a></li>
+            <li><a href="#">Defensor del Cliente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Redes Sociales</h4>
+          <div class="social-icons">
+            <a href="#"><img src="/img/fb.jpg" alt="Facebook">Facebook</a>
+            <a href="#"><img src="/img/ig.jpg" alt="Instagram">Instagram</a>
+            <a href="#"><img src="/img/x.jpg" alt="x">X</a>
+            <a href="#"><img src="/img/u2.jpg" alt="YouTube">Youtube</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2025 Banco Falabella. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

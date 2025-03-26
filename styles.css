@@ -1,0 +1,316 @@
+/* Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Botón principal */
+  .btn-green {
+    background-color: #7ad63c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-green:hover {
+    background-color: #69b931;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Titulares */
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Barra de acceso superior */
+  .access {
+    background-color: #1c1c1c;
+    color: #eee;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .access ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .access .izq li a,
+  .access .derecha li {
+    color: #ccc;
+    font-size: 0.75rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .access .izq li a:hover,
+  .access .derecha li:hover {
+    color: #fff;
+  }
+  
+  .access .derecha li::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+  }
+  
+  .access .derecha li:first-child::before {
+    background-image: url('icon-help.svg');
+  }
+  
+  .access .derecha li:last-child::before {
+    background-image: url('icon-location.svg');
+  }
+  
+  /* Header */
+  .top-bar {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+  
+  .menu ul li a:hover {
+    color: #62bd18;
+  }
+  
+  .cta-buttons .mi-cuenta {
+    background-color: #62bd18;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Sección Hero */
+  .hero {
+    background: linear-gradient(to right, #1c1c1c 50%, #ffffff 50%);
+    color: #ffffff;
+  }
+  
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 60px;
+  }
+  
+  .hero-text,
+  .hero-image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  /* Simulador */
+  .simulador {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .simulador form {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .simulador input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+  }
+  
+  /* Secciones con cards */
+  .destacados,
+  .black-friday,
+  .ofertas,
+  .extras,
+  .beneficios,
+  .eddu {
+    padding: 40px 0;
+  }
+  
+  .destacados {
+    background-color: #f9f9f9;
+  }
+  
+  .black-friday {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .black-friday p {
+    margin: 10px 0 20px;
+  }
+  
+  .grid,
+  .destacados .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 250px;
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card img {
+    height: 120px;
+    margin: 0 auto;
+  }
+  
+  /* Footer */
+  .main-footer {
+    background-color: #222;
+    color: #eee;
+    padding: 40px 0;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-columns h4 {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-columns ul {
+    list-style: none;
+  }
+  
+  .footer-columns ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-columns ul li a:hover {
+    color: #62bd18;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .social-icons a img {
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  footer p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #aaa;
+  }
